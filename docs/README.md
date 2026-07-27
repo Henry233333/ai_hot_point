@@ -1,10 +1,9 @@
-# 🔥 热点监控工具 (Yupi Hot Monitor)
+# 🔥 热点监控工具
 
 > 一款自动发现热点、智能识别真假内容、实时推送通知的 AI 工具
 
 ## 📋 项目概述
 
-作为 AI 编程博主，需要第一时间获取热点信息（如 AI 大模型更新），本工具可以：
 - 自动监控指定关键词的热点变化
 - 利用 AI 识别假冒内容
 - 第一时间发送通知
@@ -46,39 +45,6 @@
 | Twitter/X | twitterapi.io | 官方 API 接口 |
 | 聚合处理 | 多源去重 + AI 分析 | 确保信息质量 |
 
-## 📁 项目结构
-
-```
-yupi-hot-monitor/
-├── docs/                    # 文档目录
-│   ├── README.md           # 项目说明
-│   ├── REQUIREMENTS.md     # 需求文档
-│   └── API.md              # API 文档
-├── server/                  # 后端服务
-│   ├── src/
-│   │   ├── routes/         # API 路由
-│   │   ├── services/       # 业务逻辑
-│   │   │   ├── search/     # 搜索服务
-│   │   │   ├── twitter/    # Twitter 服务
-│   │   │   ├── ai/         # AI 分析服务
-│   │   │   └── notify/     # 通知服务
-│   │   ├── jobs/           # 定时任务
-│   │   ├── db/             # 数据库
-│   │   └── utils/          # 工具函数
-│   ├── prisma/             # Prisma ORM
-│   └── package.json
-├── client/                  # 前端应用
-│   ├── src/
-│   │   ├── components/     # UI 组件
-│   │   ├── pages/          # 页面
-│   │   ├── hooks/          # 自定义 Hooks
-│   │   ├── services/       # API 调用
-│   │   └── styles/         # 样式
-│   └── package.json
-├── skills/                  # Agent Skills
-│   └── SKILL.md            # 技能描述
-└── .env.example            # 环境变量模板
-```
 
 ## ⚙️ 配置说明
 
@@ -119,13 +85,3 @@ cd server && npm run dev
 cd client && npm run dev
 ```
 
-## 📝 开发日志
-
-- [ ] 项目初始化
-- [ ] 后端 API 开发
-- [ ] 数据源对接
-- [ ] AI 集成 (OpenRouter)
-- [ ] 前端页面开发
-- [ ] 通知系统开发
-- [ ] 测试与验收
-- [ ] Agent Skills 封装
